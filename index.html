@@ -3,12 +3,17 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Sieve Tray Distillation Column | Frontend Presentation</title>
+  <title>Sieve Tray Distillation Column</title>
   <link rel="stylesheet" href="styles.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <style>
+    .btn { box-shadow: 0 0 24px rgba(255,255,255,0.25) !important; }
+    .btn.primary { box-shadow: 0 0 28px rgba(255,255,255,0.35) !important; }
+    .btn::before, .btn::after { background: rgba(255,255,255,0.15) !important; }
+  </style>
 </head>
 <body>
   <header class="site-header">
@@ -332,31 +337,19 @@
       </div>
     </section>
 
-    <section class="section container">
-      <div class="two-tables">
-        <div>
-          <p class="eyebrow">Operating Conditions</p>
-          <h2>Process Conditions</h2>
-          <table>
-            <tr><th>Parameter</th><th>Value</th></tr>
-            <tr><td>Feed Composition</td><td>Project dependent</td></tr>
-            <tr><td>Feed Temperature</td><td>Project dependent</td></tr>
-            <tr><td>Operating Pressure</td><td>1 atm</td></tr>
-            <tr><td>Reflux Ratio</td><td>3.83</td></tr>
-            <tr><td>Top Temperature</td><td>78</td></tr>
-            <tr><td>Bottom Temperature</td><td>Project dependent</td></tr>
-          </table>
-        </div>
-      </div>
+    <section class="section container" style="display: flex; flex-direction: column; align-items: center; text-align: center;">
+      <p class="eyebrow">Operating Conditions</p>
+      <h2>Process Conditions</h2>
+      <table style="margin: 0 auto;">
+        <tr><th>Parameter</th><th>Value</th></tr>
+        <tr><td>Feed Temperature</td><td>32 °C</td></tr>
+        <tr><td>Operating Pressure</td><td>1 atm</td></tr>
+        <tr><td>Reflux Ratio</td><td>3.83</td></tr>
+        <tr><td>Top Temperature</td><td>78 °C</td></tr>
+        <tr><td>Bottom Temperature</td><td>98 °C</td></tr>
+      </table>
     </section>
 
-    <section class="section cta-section">
-      <div class="container cta-grid">
-        <div class="cta-actions">
-          <button class="btn primary modal-trigger" data-modal="faq">FAQ</button>
-        </div>
-      </div>
-    </section>
   </main>
 
   <section id="contact" class="section container">
@@ -408,11 +401,6 @@
   </div>
 
 </footer>
-
-
-  <div class="modal" id="faq" aria-hidden="true">
-    <div class="modal-card"><button class="close-modal">×</button><h2>FAQ</h2><ul class="modal-list"><li>What is the delivery time?</li><li>What is the warranty period?</li><li>Which materials can be used?</li><li>Can the design be customized?</li></ul></div>
-  </div>
 
   <script src="script.js"></script>
 </body>
